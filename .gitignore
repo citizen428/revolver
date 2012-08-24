@@ -1,3 +1,4 @@
 methodfinder-*.gem
 *.rbc
 .bundle/
+pkg/
