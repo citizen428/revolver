@@ -1,7 +1,7 @@
 Description
 ---
 
-A fixed size LIFO data structure, optionally free of duplicates. They feel a lot like arrays, but differ in some important arrays like indexing. This is e.g. useful for keeping a history of recent actions.
+A fixed size LIFO data structure, optionally free of duplicates. They feel a lot like arrays, but differ in some important areas like indexing. This is e.g. useful for keeping a history of recent actions.
 
 Usage
 ---
@@ -74,7 +74,7 @@ Finally you can get a plain array out of a `Revolver`:
 License
 ---
 
-Copyright (c) 2011 Michael Kohl
+Copyright (c) 2012 Michael Kohl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
