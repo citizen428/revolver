@@ -21,6 +21,11 @@ Alternatively, you can create a `Revolver` from an existing array:
     Revolver.from_array([*1..3], 3)
     #=> #<Revolver: [1, 2, 3]>
 
+Or from a list of elements:
+
+    Revolver[*1..3]
+    #=> #<Revolver: [1, 2, 3]>
+
 You can also create a unique `Revolver` that way:
 
     Revolver.from_array([1, 1, 3], true)
@@ -70,6 +75,10 @@ Finally you can get a plain array out of a `Revolver`:
 
     r.to_a
     #=> [1, 2, 3, 4, 5]
+
+Thanks
+---
+* [Wojtek Mach](https://github.com/wojtekmach) for [adding](https://github.com/citizen428/revolver/pull/1) `Revolver.[]`.
 
 License
 ---

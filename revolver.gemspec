@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'revolver'
-  gem.version = '1.0.0'
+  gem.version = '1.1.0'
   gem.author = 'Michael Kohl'
   gem.email = 'citizen428@gmail.com'
   gem.summary = 'A fixed-size LIFO data structure'
