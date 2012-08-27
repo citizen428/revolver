@@ -4,6 +4,10 @@ class Revolver
     array.inject(rev) { |r, e| r << e }
   end
 
+  def self.[](*array)
+    from_array(array)
+  end
+
   def initialize(size, unique = false)
     @array = []
     @size = size

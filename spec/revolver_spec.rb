@@ -14,6 +14,12 @@ describe Revolver do
     r.to_a.must_equal([1, 2, 3, 4, 5])
   end
 
+  it "creates a new Revolver from an array" do
+    r = Revolver[*1..5]
+    r.must_be_kind_of(Revolver)
+    r.to_a.must_equal([1, 2, 3, 4, 5])
+  end
+
   it "returns an array representation of itself" do
     @empty.to_a.must_be_empty
     @full.to_a.must_equal([1, 2, 3])
