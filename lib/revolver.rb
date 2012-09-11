@@ -34,7 +34,7 @@ class Revolver
   end
 
   def to_a
-    @array
+    @array.dup
   end
 
   def to_s
