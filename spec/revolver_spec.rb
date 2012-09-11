@@ -22,7 +22,10 @@ describe Revolver do
 
   it "returns an array representation of itself" do
     @empty.to_a.must_be_empty
+    size = @full.to_a.size
     @full.to_a.must_equal([1, 2, 3])
+    @full.to_a.pop
+    @full.to_a.size.must_equal(size)
   end
 
   it "tells you how many elements it contains" do
