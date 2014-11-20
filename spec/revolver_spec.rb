@@ -8,13 +8,13 @@ describe Revolver do
     @full = Revolver.new(3).push(1).push(2).push(3)
   end
 
-  it "creates a new Revolver from an array" do
+  it ".from_array creates a new Revolver from an array" do
     r = Revolver.from_array([*1..5])
     r.must_be_kind_of(Revolver)
     r.to_a.must_equal([1, 2, 3, 4, 5])
   end
 
-  it "creates a new Revolver from an array" do
+  it ".[] creates a new Revolver from an array" do
     r = Revolver[*1..5]
     r.must_be_kind_of(Revolver)
     r.to_a.must_equal([1, 2, 3, 4, 5])
@@ -55,8 +55,13 @@ describe Revolver do
     @full[-4].must_equal(3)
   end
 
+  it "tells you wheter or not its elements are unique" do
+    @empty.unique?.must_equal(false)
+    Revolver.new(3, unique: true).unique?.must_equal(true)
+  end
+
   it "doesn't allow duplicates when created with the 'unique' option" do
-    r = Revolver.new(3, true).push(1).push(1).push(2)
+    r = Revolver.new(3, unique: true).push(1).push(1).push(2)
     r.push(1).to_a.must_equal([2, 1])
   end
 

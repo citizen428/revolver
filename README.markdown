@@ -18,7 +18,7 @@ Create a `Revolver` with unique elements:
 
 Alternatively, you can create a `Revolver` from an existing array:
 
-    Revolver.from_array([*1..3], 3)
+    Revolver.from_array([*1..3])
     #=> #<Revolver: [1, 2, 3]>
 
 Or from a list of elements:

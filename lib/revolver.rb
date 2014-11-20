@@ -1,6 +1,6 @@
 class Revolver
-  def self.from_array(array, unique = false)
-    rev = Revolver.new(array.size, unique)
+  def self.from_array(array, unique: false)
+    rev = Revolver.new(array.size, unique: unique)
     array.inject(rev) { |r, e| r << e }
   end
 
@@ -8,7 +8,7 @@ class Revolver
     from_array(array)
   end
 
-  def initialize(size, unique = false)
+  def initialize(size, unique: false)
     @array = []
     @size = size
     @unique = unique
@@ -31,6 +31,10 @@ class Revolver
 
   def size
     @array.size
+  end
+
+  def unique?
+    !!@unique
   end
 
   def to_a

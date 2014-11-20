@@ -1,0 +1,6 @@
+rvm:
+  - 2.0.0
+  - 2.1.1
+  - rbx-2
+  - ruby-head
+  - jruby-head
